@@ -4,7 +4,7 @@ import logo from "../../../assets/react.svg"
 
 export function Navbar() {
     return (
-        <ul className="navbar">
+        <ul className="bg-gray-800 text-white flex justify-between items-center p-4">
             <img src={logo} alt="react logo" />
             <ul className="navbar-links">
             <li>
