@@ -1,5 +1,10 @@
 .main-content{
-    background-color: black;
+    background-color: white;
     padding: 1px;
-    color: white;
+    color: black;
+    font-size: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

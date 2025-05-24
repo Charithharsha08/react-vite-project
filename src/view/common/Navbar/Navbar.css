@@ -1,6 +1,14 @@
 /* Navbar.css */
 
+* {
+    margin: 0;
+}
+
 .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     list-style: none;
     display: flex;
     gap: 20px;
