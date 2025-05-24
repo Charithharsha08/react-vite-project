@@ -11,10 +11,16 @@ export function Contact() {
         message: string;
     };
 
+    const onSubmit = (data: FormData) => {
+        console.log("Form data submitted:", data);
+        alert(`Submitted form data.`);
+        $
+    }
+
     return (
         <div className="contact-container">
             <h1 className="contact-title">Contact Us</h1>
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" {...register("name", {required: "Name is required", pattern: {value: /^[A-Za-z\s]+$/, message: "Name must contain only letters and spaces"}})} />
 
