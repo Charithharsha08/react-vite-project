@@ -12,25 +12,6 @@ Welcome to the **React Vite Project** – a beginner-friendly project that demon
 
 ---
 
-## 📁 Project Structure
-
-react-vite-project/
-├── public/ # Static assets
-├── src/
-│ ├── components/ # Reusable UI components
-│ ├── App.jsx # Main app component
-│ ├── main.jsx # Entry point
-│ └── index.css # Tailwind CSS import
-├── .gitignore
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── vite.config.js
-
-
----
-
 🧠 What You'll Learn
 
 How to create a project with Vite for fast setup and hot reloading.
@@ -38,6 +19,7 @@ How to create a project with Vite for fast setup and hot reloading.
 Basic React concepts like components, props, and JSX.
 
 How to use Tailwind CSS classes to style components quickly and responsively.
+
 
 🛠 Configuration Notes
 
@@ -47,6 +29,7 @@ Vite provides blazing-fast startup and HMR (Hot Module Replacement).
 
 Project components are stored in the src/components/ directory for better structure.
 
+
 📚 Resources
 
 React Documentation
@@ -55,5 +38,7 @@ Vite Documentation
 
 Tailwind CSS Documentation
 
+
 🤝 Contributing
+
 This is a basic learning project, but feel free to fork the repo, experiment, and create pull requests!
