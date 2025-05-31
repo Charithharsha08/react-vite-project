@@ -32,6 +32,7 @@ react-vite-project/
 ---
 
 🧠 What You'll Learn
+
 How to create a project with Vite for fast setup and hot reloading.
 
 Basic React concepts like components, props, and JSX.
@@ -39,6 +40,7 @@ Basic React concepts like components, props, and JSX.
 How to use Tailwind CSS classes to style components quickly and responsively.
 
 🛠 Configuration Notes
+
 Tailwind CSS is configured via tailwind.config.js and loaded into the project through index.css.
 
 Vite provides blazing-fast startup and HMR (Hot Module Replacement).
@@ -46,6 +48,7 @@ Vite provides blazing-fast startup and HMR (Hot Module Replacement).
 Project components are stored in the src/components/ directory for better structure.
 
 📚 Resources
+
 React Documentation
 
 Vite Documentation
