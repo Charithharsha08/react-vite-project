@@ -5,9 +5,11 @@ import {Footer} from "../Footer/Footer.tsx";
 export function DefaultLayout() {
     return (
         <>
+        <div className="default-layout w-full h-screen ">
             <Navbar/>
             <MainContent/>
             <Footer/>
+        </div>
         </>
     );
 }

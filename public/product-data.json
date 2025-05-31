@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "name": "Allow Wheels",
+    "description": "new Arrival",
+    "price": 5000.00,
+   "currency": "LKR",
+    "imageUrl": "1.jpg"
+  },
+
+  {
+    "id": "2",
+    "name": "Cup Holder",
+    "description": "New Import",
+    "price": 1000.00,
+    "currency": "LKR",
+    "imageUrl": "2.jpg"
+  },
+
+  {
+    "id": "3",
+    "name": "Break caliper",
+    "description": "Japan Import",
+    "price": 7000.00,
+    "currency": "LKR",
+    "imageUrl": "3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Blower",
+    "description": "Japan Import",
+    "price": 7000.00,
+    "currency": "LKR",
+    "imageUrl": "4.jpg"
+  }
+]

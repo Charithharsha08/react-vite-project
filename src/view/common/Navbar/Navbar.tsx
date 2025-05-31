@@ -2,12 +2,14 @@
 import "./Navbar.css";
 */
 import { Link } from "react-router-dom";
-import logo from "../../../assets/react.svg";
-
+import logo from "../../../assets/logo/Parts-LK-Logo.png";
 export function Navbar() {
     return (
-        <nav className="bg-gray-800 text-white flex justify-between items-center px-6 py-4">
-            <img src={logo} alt="react logo" className="w-10 h-10" />
+        <nav className="bg-amber-500 text-white flex justify-between items-center px-6 py-4">
+
+            <div className="flex items-center">
+                <img src={logo} alt="Parts-LK Logo" className="w-48 h-12 mr-3" />
+            </div>
 
             <ul className="flex gap-10 text-lg font-medium">
                 <li>
