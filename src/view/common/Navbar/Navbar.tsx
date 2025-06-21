@@ -21,6 +21,9 @@ export function Navbar() {
                 <li>
                     <Link to="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
                 </li>
+                <li>
+                    <Link to="/shopping-cart" className="hover:text-cyan-400 transition-colors">Shopping Cart</Link>
+                </li>
             </ul>
 
             <button className="bg-cyan-400 hover:bg-cyan-500 text-black font-bold py-2 px-4 rounded transition-colors">
