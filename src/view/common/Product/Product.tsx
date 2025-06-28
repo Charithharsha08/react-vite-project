@@ -1,8 +1,7 @@
-import {useState} from "react";
 import {ModifyCart} from "../Modify/ModifyCart.tsx";
 import type {ProductData} from "../../../Model/ProductData.ts";
-import {useDispatch} from "react-redux";
-import type {AppDispatch} from "../../../store/store.ts";
+import {useDispatch, useSelector} from "react-redux";
+import type {AppDispatch, RootState} from "../../../store/store.ts";
 import {addItemToCart} from "../../../slices/cartSlice.ts";
 
 type productProps = {
@@ -19,11 +18,13 @@ export function Product({ data }: productProps) {
 
     const dispatch = useDispatch<AppDispatch>();
 
-    const [isActive, setIsActive] = useState(false);
+    const item = useSelector((state:RootState) => state.cart.items.find(cartItems => cartItems.product.id === data.id));
+
+   // const [isActive, setIsActive] = useState(false);
 
     function addToCart() {
         dispatch(addItemToCart(data));
-        setIsActive(true);
+       // setIsActive(true);
     }
 
     return (
@@ -40,8 +41,8 @@ export function Product({ data }: productProps) {
             <div className="flex justify-center">
 
                 {
-                    isActive ? (
-                       <ModifyCart data={{product: data}}></ModifyCart>
+                    item ? (
+                       <ModifyCart data={data}></ModifyCart>
                     ) : (
                         <button
                             className="mt-2 w-full py-[4px] bg-emerald-600 hover:bg-emerald-700 text-white text-[9px] font-semibold rounded-md transition-colors"
