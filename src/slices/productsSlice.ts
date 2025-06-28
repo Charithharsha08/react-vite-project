@@ -1,7 +1,8 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import type {ProductData} from "../Model/ProductData.ts";
 
 interface ProductState {
-    list: [];
+    list: ProductData[];
     error: string | null | undefined;
 }
 const initialState: ProductState = {
