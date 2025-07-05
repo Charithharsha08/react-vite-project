@@ -1,5 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import type {ProductData} from "../Model/ProductData.ts";
+import {backendApi} from "../api.ts";
 
 interface ProductState {
     list: ProductData[];
@@ -13,8 +14,12 @@ const initialState: ProductState = {
 export const getAllProduct = createAsyncThunk(
     'products/getAllProducts',
     async () => {
-        const response = await fetch('./product-data.json')
-        return  await response.json()
+       /* const response = await fetch('./product-data.json')
+        return  await response.json()*/
+
+       const response = await backendApi.get('api/products/all')
+        return response.data
+
     }
 )
 

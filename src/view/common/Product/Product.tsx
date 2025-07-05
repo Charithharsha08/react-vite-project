@@ -14,7 +14,7 @@ const images : Record<string, string>
 
 
 export function Product({ data }: productProps) {
-    const image = images[`../../../assets/product/${data.imageUrl}`];
+    const image = images[`../../../assets/product/${data.image}`];
 
     const dispatch = useDispatch<AppDispatch>();
 
