@@ -31,6 +31,7 @@ export function Contact() {
                 console.error(err);
             });
     };
+
     const saveContact = createAsyncThunk(
         'contact/saveContact',
         async (data: FormData) => {
